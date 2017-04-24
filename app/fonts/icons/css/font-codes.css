@@ -1,0 +1,4 @@
+
+.icon-list:before { content: '\e800'; } /* '' */
+.icon-phone-call:before { content: '\e801'; } /* '' */
+.icon-envelope:before { content: '\e802'; } /* '' */
