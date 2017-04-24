@@ -5,6 +5,9 @@ $container-large-desktop: (1100px + $grid-gutter-width);
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 @import "_helpers.scss";
+@import "_catalog.scss";
+@import "_object.scss";
