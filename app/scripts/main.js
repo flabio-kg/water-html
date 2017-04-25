@@ -1,3 +1,10 @@
+$(window).on("load", function (e) {
+  $('.preloader').fadeOut('slow',
+      function(){
+        $(this).remove()
+      })
+});
+
 $(document).ready(function() {
 	
 	$('.js-object').owlCarousel({

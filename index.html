@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Water</title>
+  <title>Water-html</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
+  <!--[if lt IE 9]>
+  <script src="javascripts/html5shiv.js"></script>
+  <![endif]-->
   <style>
     html{
       height: 100%;
@@ -24,6 +30,10 @@
       background-color: #fff;
       padding: 20px;
       height: 100%;
+    }
+    .container-fluid img{
+      margin: 0 auto;
+      display: block;
     }
     h1{
       margin: 0;
@@ -50,13 +60,15 @@
 </head>
 <body>
 <div class="container-fluid">
-  <h1>Water</h1>
+  <div style="background-color: #fff; display: block; text-align: center; padding: 10px;">
+    <img width="200" src="dist/images/logo.png" alt="#">
+  </div>
   <ol class='list'>
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="registration.html">Главная вход</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="company.html">О компании</a></li>
-    <li><a href="lk_adding.html">Добовление</a></li>
+    <li><a target="_blank" href="dist/index.html">Главная</a></li>
+    <li><a target="_blank" href="dist/boilers.html">Котлы</a></li>
+    <li><a target="_blank" href="dist/object.html">Наши объекты</a></li>
+    <li><a target="_blank" href="dist/basket.html">Корзина</a></li>
+    <li><a target="_blank" href="dist/thank.html">Спасибо!</a></li>
   </ol>
 </div>
 </body>

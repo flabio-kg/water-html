@@ -192,7 +192,12 @@
 	&__pagination{
 		text-align: right;
 		padding-top: 17px;
+		padding-bottom: 17px;
+		@media (max-width: $screen-xs-max){
+			text-align: center;
+		}
 		ul{
+			padding-left: 0;
 			li{
 				padding-right: 2px;
 				a{
@@ -201,19 +206,35 @@
 					background-color: #E8E9E9;
 					border-radius: 10em;
 					padding: 5px 12px;
+					@media (max-width: $screen-xs-max){
+						font-size: 15px;
+						background: none;
+						padding: 5px;
+					}
 					&:hover{
 						background-color: #DC6931;
 						color: #fff;
+						@media (max-width: $screen-xs-max){
+							background: none;
+							color: #000;
+						}
 					}
 				}
 				.-active{
 					background-color: #DC6931;
 					color: #fff;
+					@media (max-width: $screen-xs-max){
+						background: none;
+						color: #000;
+					}
 				}
 				.-prev{
 					font-size: 18px;
 					color: #010101;
 					background: none;
+					@media (max-width: $screen-xs-max){
+						font-size: 14px;
+					}
 					&:hover{
 						background: none;
 						color: #010101;
@@ -223,6 +244,9 @@
 					font-size: 18px;
 					color: #010101;
 					background: none;
+					@media (max-width: $screen-xs-max){
+						font-size: 14px;
+					}
 					&:hover{
 						background: none;
 						color: #010101;

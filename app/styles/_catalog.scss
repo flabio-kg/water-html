@@ -4,12 +4,12 @@
   &__advantage{
    display: block;
    padding-bottom: 60px;
-   @media (min-width: $screen-sm-min){
-    padding-bottom: 50px;
-  }
-     @media (max-width: $screen-xs-max){
+    @media (min-width: $screen-sm-min){
+      padding-bottom: 50px;
+    }
+    @media (max-width: $screen-xs-max){
       padding-bottom: 20px;
-     }
+    }
   .wrap{
     display: inline-block;
     @media (max-width: $screen-xs-max){
@@ -194,12 +194,16 @@ table{
         border: dashed 1px;
         border-bottom: none;
       }
+      @media (max-width: $screen-xs-min){
+        padding-left: 5px;
+        padding-right: 5px;
+      }
       &:last-child{
-          border-right: none;
-          @media (max-width: $screen-sm-min){
-           border-right: dashed 1px;
-         }
-       }
+        border-right: none;
+        @media (max-width: $screen-sm-min){
+          border-right: dashed 1px;
+        }
+      }      
      .item{
        &__imgwrap{
         display: inline-block;
@@ -255,7 +259,7 @@ table{
       }
     }
   }
-  .last{
+  .last{    
     @media (max-width: $screen-xs-max){
       display: none;
       &:last-child{
@@ -267,7 +271,7 @@ table{
       &:last-child{
         display: none;
       }
-    }
+    }    
   }
 	}
 }
