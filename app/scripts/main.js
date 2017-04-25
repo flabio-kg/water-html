@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	
 	$('.js-object').owlCarousel({
 		items: 1,
 		loop:true,
@@ -21,6 +21,7 @@ $(document).ready(function() {
 
 	});
 
+
 $('.js-brand').owlCarousel({
    items:6,
    loop:true,
@@ -32,6 +33,23 @@ $('.js-brand').owlCarousel({
    nav: true,
    navText:['']
  });
+
+	$('.js-main-slider').owlCarousel({
+		items: 1,
+		loop:true,
+		lazyLoad:true,
+		dots: true,
+		nav: false,
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
+		autoplay:true,
+		autoplayTimeout:5000,
+		autoplayHoverPause:false,
+		mouseDrag: false,
+		
+	});
+
+
 	$('.js-drop').on('click', function(event) {
 		event.preventDefault();
 		$('.js-drop').not(this).parent().removeClass('open');

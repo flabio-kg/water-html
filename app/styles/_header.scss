@@ -327,7 +327,7 @@
 				color: #fff;
 				display: block;
 				line-height: 50px;
-				font-size: 16px;
+				font-size: 15px;
 				position: relative;
 				padding-left: 40px;
 				._navtrigger{
@@ -418,6 +418,43 @@
 			}
 		}
 	}
+	&__slider{
+		clear: both;
+	}
+}
+
+.mainslider{
+	&__item{
+		min-height: 450px;
+		background-size: cover;
+		background-position: 50%;
+		@media (max-width: $screen-xs-max) {
+			min-height: 200px;
+		}
+	}
+	.owl-dots{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 10px;
+		.owl-dot{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			margin-left: 5px;
+			margin-right: 5px;
+			border-radius: 30em;
+			background-color: #fff;
+			transition: all .5s;
+			&:hover{
+				background-color: #666;
+			}
+			&.active{
+				background-color: #000;
+			}
+		}
+	}
 }
 
 .mmenu-nav{
@@ -503,38 +540,6 @@
 				}
 			}
 		}
-	}	
-}
-.mainslider{
-	&__item{
-		min-height: 450px;
-		background-size: cover;
-		background-position: 50%;
-		@media (max-width: $screen-xs-max) {
-			min-height: 200px;
-		}
 	}
-	.owl-dots{
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-align: center;
-		padding-bottom: 10px;
-		.owl-dot{
-			display: inline-block;
-			width: 15px;
-			height: 15px;
-			margin-left: 5px;
-			margin-right: 5px;
-			border-radius: 30em;
-			background-color: #fff;
-			transition: all .5s;
-			&:hover{
-				background-color: #666;
-			}
-			&.active{
-				background-color: #000;
-			}
-		}
-	}
+
 }
