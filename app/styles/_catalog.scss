@@ -153,35 +153,45 @@ table{
   position: relative;
   margin: 0 auto;
   margin-top: 50px;
+  border-collapse: collapse;
   tr{
     vertical-align: top;
-    border-bottom-style: dashed;
-    border-bottom-width: 1px;
-    border-bottom-color:  #757575;
+    // border-bottom-style: dashed;
+    // border-bottom-width: 1px;
+    // border-bottom-color:  #757575;
 
     &:last-child{
       border-bottom: none;
+      td{
+        border-bottom: none;
+        &:last-child{
+          border-right: none;
+          @media (max-width: $screen-sm-min){
+           border: dashed 1px;
+           display: block;
+         }
+       }
+      }
     }
     td{
       padding-top: 25px;
       padding-left: 10px;
       padding-bottom: 20px;
       padding-right: 5px;
-      border-right-style: dashed;
-      border-right-width: 1px;
-      border-right-color:  #757575;
+      border-right: dashed 1px  #757575;
+      border-bottom: dashed 1px  #757575;
       @media (max-width: $screen-sm-min){
         display: block;
         text-align: center;
         border: dashed 1px;
+        border-bottom: none;
       }
       &:last-child{
-        border-right: none;
-        @media (max-width: $screen-sm-min){
-         border: dashed 1px;
-         display: block;
+          border-right: none;
+          @media (max-width: $screen-sm-min){
+           border-right: dashed 1px;
+         }
        }
-     }
      .item{
        &__imgwrap{
         display: inline-block;
@@ -237,7 +247,6 @@ table{
     }
   }
   .last{
-    display: block;
     @media (max-width: $screen-xs-max){
       display: none;
       &:last-child{
@@ -251,6 +260,6 @@ table{
       }
     }
   }
-}
+	}
 }
 }
