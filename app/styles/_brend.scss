@@ -11,7 +11,6 @@
     text-decoration: none;
     display: inline-block;
     float: right;
-    // font-weight: 600;
     .fa-angle-right{
       margin-right: 10px;
       color: #c7c7c7;
@@ -27,6 +26,7 @@
   }
   &__blog{
     position: relative;
+    padding-top: 79px;
     .owl-stage-outer{
       max-width: 930px;
       display: block;
@@ -43,7 +43,7 @@
        padding-left: 15px;
        padding-right: 17px;
        border: 2px #636363 solid;
-       top: 30px;
+       top: 65px;
        left: -20px;
        @media (max-width: $screen-md-max) {
         left: -50px;
@@ -67,7 +67,7 @@
    padding-left: 17px;
    padding-right: 15px;
    border: 2px #636363 solid;
-   top: 30px;
+   top: 65px;
    right: 0;
    @media (max-width: $screen-md-max) {
     right: -30px;
