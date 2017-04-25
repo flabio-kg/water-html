@@ -1,0 +1,20 @@
+.footer{
+	background-color: #2B62A1;
+	border-top: 2px #DD6C35 solid;
+	min-height: 250px;
+	&__blog{
+		padding-top: 45px;
+	}
+	&__item{
+		&--logo{
+			text-align: center;
+			p{
+				font-size: 12px;
+				color: #fff;
+			}
+			img{
+				width: auto;
+			}
+		}
+	}
+}

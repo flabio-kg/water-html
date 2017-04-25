@@ -26,7 +26,7 @@ $('.js-brand').owlCarousel({
    loop:true,
    margin:33,
    autoWidth: true,
-   autoplay:false,
+   autoplay:true,
    autoplayTimeout:1000,
    autoplayHoverPause:false,
    nav: true,
