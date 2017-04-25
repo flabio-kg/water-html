@@ -1,0 +1,25 @@
+.thanks{
+	background-image: url('../images/supply.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 490px;
+	padding-top: 50px;
+	.-vmine{
+		font-size: 12px;
+		color: #000;
+		text-decoration: none;
+	}
+	&__blog{
+		text-align: center;
+		padding-top: 85px;
+		h3{
+			font-size: 52px;
+			color: #000;
+		}
+		h4{
+			font-size: 36px;
+			color: #000;
+		}
+	}
+}

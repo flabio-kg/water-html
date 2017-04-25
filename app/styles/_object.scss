@@ -2,14 +2,24 @@
 	&__blog{
 		padding-top: 40px;
 		padding-bottom: 40px;
+		&:nth-of-type(odd) {
+			background-color: #E8E9E9;
+		}
 	}
 	&__item{
 		max-width: 100%;
 		width: 100%;
-		min-height: 390px;
+		height: 390px;
 		position: relative;
+		@media (max-width: $screen-xs-min) {
+			height: 200px;
+		}
 		.owl-stage-outer{
 			height: 390px;
+			.owl-item{
+				height:100%;
+				width:100%;
+			}
 		}
 		.owl-nav{
 			.owl-prev{
@@ -23,6 +33,9 @@
 					top: 40%;
 					transform: translateX(-50%);
 					z-index: 5;
+					@media (max-width: $screen-xs-min) {
+						top: 30%;
+					}
 				}
 				&:after{
 					content: '';
@@ -49,6 +62,9 @@
 					top: 40%;
 					transform: translateX(-50%);
 					z-index: 5;
+					@media (max-width: $screen-xs-min) {
+						top: 30%;
+					}
 				}
 				&:after{
 					content: '';
@@ -66,6 +82,12 @@
 			}
 		}
 		a{
+			display: block;
+			position: relative;
+			height: 390px;
+			@media (max-width: $screen-xs-min) {
+				height: 200px;
+			}
 			span{
 				background-position: center center;
 				background-size: cover;
@@ -73,7 +95,7 @@
 				position: absolute;
 				max-width: 100%;
 				width: 100%;
-				height: 390px;				
+				height: 100%;
 			}
 		}		
 	}
@@ -84,6 +106,9 @@
 			color: #201f35;
 			font-family: 'RobotoRegular';
 			margin: 0;
+			@media (max-width: $screen-sm-min) {
+				font-size: 25px;
+			}
 		}
 		h4{
 			font-size: 28px;
@@ -91,6 +116,9 @@
 			font-family: 'RobotoRegular';
 			margin: 0;
 			padding-top: 15px;
+			@media (max-width: $screen-sm-min) {
+				font-size: 20px;
+			}
 		}
 		p{
 			font-size: 16px;
@@ -98,9 +126,14 @@
 			font-family: 'RobotoRegular';
 			margin: 0;
 			padding-top: 35px;
+			@media (max-width: $screen-sm-min) {
+				font-size: 13px;
+				padding-top: 15px;
+			}
 			span{
 				display: block;
 				border-bottom: 2px #DD6C35 solid;
+				margin-top: 10px;
 			}
 		}
 	}

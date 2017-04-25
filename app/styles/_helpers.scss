@@ -9,11 +9,19 @@ a{
     text-decoration: none;
   }
 }
+
+body{
+  background-color: #fff;
+}
+
 .title{
   text-transform: uppercase;
   font-size: 32px;
   color: #201f35;
   margin: 0;
+  @media (max-width: $screen-sm-min) {
+    font-size: 25px;
+  }
 }
 .topnav{
   border-bottom: 2px #DD6C35 solid;
@@ -28,10 +36,20 @@ a{
     li{
       display: inline-block;
       list-style-type: none;
+      padding-right: 10px;
+      position: relative;
+      &:nth-child(1){
+        &:before{
+          content: '/';
+          position: absolute;
+          right: 1px;
+        }
+      }
       a{
         font-size: 12px;
-        color: #201f35;
+        color: #000;
         text-decoration: none;
+        font-weight: bold;
         &:hover{
           color: #DD6C35;
           transition: all .3s;
