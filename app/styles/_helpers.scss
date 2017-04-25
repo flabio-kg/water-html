@@ -12,6 +12,50 @@ a{
 
 body{
   background-color: #fff;
+  .fa-angle-up{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 80px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 13px;
+    padding-bottom: 18px;
+    color: #2B62A1;
+    border: 5px #2B62A1 solid;
+    line-height: 30px;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+  #back-to-top {
+    position: fixed;
+    bottom: 300px;
+    left: 100px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    @media (max-width: $screen-md-max) {
+      right: 10px;
+    }
+  }
+  #back-to-top:hover {
+    background: none;
+  }
+  #back-to-top.show {
+    opacity: 1;
+  }
+  #content {
+    height: 2000px;
+  }
 }
 
 .title{
