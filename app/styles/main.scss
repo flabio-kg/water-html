@@ -11,5 +11,6 @@ $container-large-desktop: (1100px + $grid-gutter-width);
 // endbower
 
 @import "_helpers.scss";
+@import "_header.scss";
 @import "_catalog.scss";
 @import "_object.scss";
