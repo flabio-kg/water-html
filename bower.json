@@ -5,7 +5,9 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "owl.carousel": "^2.2.1",
-    "jquery.maskedinput": "^1.4.1"
+    "jquery.maskedinput": "^1.4.1",
+    "font-awesome": "^4.7.0",
+    "matchHeight": "jquery-match-height#^0.7.2"
   },
   "overrides": {
     "bootstrap-sass": {

@@ -13,3 +13,7 @@ $container-large-desktop: (1100px + $grid-gutter-width);
 @import "_helpers.scss";
 @import "_catalog.scss";
 @import "_object.scss";
+@import "_brend.scss";
+@import "_actions.scss";
+@import "_application.scss";
+@import "_boilers.scss";

@@ -1,0 +1,66 @@
+.actions{
+    .title{
+    display: inline-block;
+    @media (max-width: $screen-md-max){
+      display: block;
+    }
+  }
+  .link{
+    font-size: 16px;
+    color: #005b9c;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    // font-weight: 600;
+    .fa-angle-right{
+      margin-right: 10px;
+      color: #c7c7c7;
+      font-size: 20px;
+    }
+    &:hover{
+      color: #DD6C35;
+    }
+    @media (max-width: $screen-md-max){
+      float: left;
+      margin-top: 10px;
+    }
+  }
+	&__blog{
+		padding-top: 55px;
+		padding-bottom: 50px;
+	}
+	&__item{
+		img{
+			max-width: 100%;
+			width: 100%;
+		}
+		h3{
+			font-size: 28px;
+			color: #000;
+			padding-top: 20px;
+			padding-bottom: 50px;
+			margin: 0;
+		}
+		p{
+			font-size: 16px;
+			color: #000;
+			margin: 0;
+		}
+		a{
+			font-size: 16px;
+			color: #44596c;
+			text-decoration: none;
+			&:hover{
+				color: #DD6C35;
+				transition: all .3s;
+			}
+		}
+		span{
+			text-align: right;
+			display: block;
+			padding-top: 20px;
+			font-size: 16px;
+			color: #000;
+		}
+	}
+}
