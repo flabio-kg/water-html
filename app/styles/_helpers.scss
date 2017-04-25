@@ -56,12 +56,6 @@ body{
           color: #DD6C35;
           transition: all .3s;
         }
-        &:last-child{
-          cursor: no-drop;
-          &:hover{
-            color: #000;
-          }
-        }
       }
     }
   }

@@ -9,14 +9,14 @@
       list-style-type: none;
       padding-right: 10px;
       position: relative;
-      &:nth-child(1n+2){
-        &:before{
-          content: '/';
-          position: absolute;
-          right: 1px;
-        }
+      font-size: 12px;
+      color: #000;
+      &:before{
+        content: '/';
+        position: absolute;
+        right: 1px;
       }
-      &:nth-child(6){
+      &:last-child{
         &:before{
           content: '';
           position: absolute;
@@ -26,9 +26,7 @@
       a{
         font-size: 12px;
         color: #000;
-        font-family: 'RobotoRegular';
         text-decoration: none;
-        font-weight: bold;
         &:hover{
           color: #DD6C35;
           transition: all .3s;
