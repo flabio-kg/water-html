@@ -42,12 +42,6 @@
 				li{
 					list-style-type: none;
 					padding-bottom: 5px;
-						font-size: 16px;
-						color: #fff;
-						text-decoration: none;
-						@media (max-width: $screen-sm-min) {
-							font-size: 14px;
-						}
 					a{
 						font-size: 16px;
 						color: #fff;
@@ -59,20 +53,41 @@
 							color: #DC6931;
 							transition: all .3s;
 						}
-						i{
-							padding-right: 5px;
-							opacity: .60;
-						}
-						.icon-envelope{
-							font-size: 9px;
-						}
-						.icon-phone-call{
-							font-size: 13px;
-							padding-right: 0;
-						}
-						.fa-map-marker{
-							padding-left: 3px;
-						}
+					}
+				}
+			}
+			.-foot{
+				position: relative;
+				li{
+					list-style-type: none;
+					padding-bottom: 5px;
+					font-size: 16px;
+					color: #fff;
+					padding-left: 30px;
+					@media (max-width: $screen-xs-min) {
+						padding-left: 15px;
+						font-size: 14px;
+					}
+					i{
+						position: absolute;
+						left: 0;
+						width: 20px;
+						text-align: center;
+						opacity: .70;
+					}
+					.icon-envelope{
+						font-size: 9px;
+						padding-top: 7px;
+					}
+					.icon-phone-call{
+						font-size: 13px;
+						padding-top: 1px;
+					}
+					.fa-map-marker{
+						padding-top: 3px;
+					}
+					.fa-clock-o{
+						padding-top: 2px;
 					}
 				}
 			}
