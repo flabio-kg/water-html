@@ -53,6 +53,7 @@
     float: left;
     width: 10%;
     padding-top: 50px;
+
   }
   .product-removal {
     float: left;
@@ -156,11 +157,12 @@
       color: #000;
     }
     .product-quantity input {
-      width: 40px;
-      border: none;
+      width: 60px;
       outline: none;
+      font-size: 16px;
+      padding-left: 5px;
       @media (max-width: $screen-sm-max) {
-        width: 30px;
+        width: 50px;
       }
       &:hover{
         cursor: pointer;

@@ -42,18 +42,22 @@
 			padding-left: 15px;
 			li{
 				list-style-type: none;
-				&:nth-child(1){
-					list-style-type: disc;
+				display: block;			
+				color: #010101;
+				font-size: 12px;					
+				text-decoration: none;
+				&:hover{
+					color: #DD6C35;
+					transition: all .3s;
 				}
-				a{
-					color: #010101;
-					font-size: 12px;					
-					text-decoration: none;
-					&:hover{
-						color: #DD6C35;
-						transition: all .3s;
-					}
+				input[type="checkbox"]{
+					margin-right: 5px;
+					outline: none;					
 				}
+				label{
+					font-weight: normal;
+				}
+				
 			}
 		}
 		.-btn{

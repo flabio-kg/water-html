@@ -42,6 +42,12 @@
 				li{
 					list-style-type: none;
 					padding-bottom: 5px;
+						font-size: 16px;
+						color: #fff;
+						text-decoration: none;
+						@media (max-width: $screen-sm-min) {
+							font-size: 14px;
+						}
 					a{
 						font-size: 16px;
 						color: #fff;
